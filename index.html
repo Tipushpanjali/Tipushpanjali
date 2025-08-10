@@ -6,132 +6,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Profile</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
-  <style>
-    /* Reset some styles */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      padding: 1rem;
-      background-color: #f9f9f9;
-    }
-
-    .container {
-      margin: 2rem auto;
-      max-width: 1200px;
-    }
-
-    .head {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-      gap: 1rem;
-    }
-
-    .h-1 img {
-      border-radius: 50%;
-      height: 15rem;
-      width: 15rem;
-      object-fit: cover;
-    }
-
-    .head p {
-      font-size: 1.5rem;
-      font-weight: bold;
-    }
-    .h-2 img{
-        border-radius: 50%;
-        height: 2rem;
-        width: 2rem;
-        object-fit: cover;
-    }
-    
-
-    .myself,
-    .projects,
-    .certi,
-    .skill,
-    .connect {
-      margin-top: 2rem;
-    }
-
-    .myself p,
-    .projects p,
-    .certi p,
-    .skill p,
-    .connect p {
-      font-size: 1.2rem;
-      font-weight: bold;
-      margin-bottom: 1rem;
-    }
-
-    .container2 {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 2rem;
-      margin-top: 2rem;
-    }
-
-    /* Responsive tweaks */
-    @media (max-width: 768px) {
-      .head {
-        flex-direction: column;
-        text-align: center;
-      }
-
-      .h-1 img {
-        height: 10rem;
-        width: 10rem;
-      }
-      .h-2 p{
-        font-size: 5rem;
-    }
-       
-    }
-
-    @media (max-width: 480px) {
-      .h-1 img {
-        height: 8rem;
-        width: 8rem;
-      }
-
-      .h-1 p {
-        font-size: 1.2rem;
-      }
-      .h-2 img{
-        height:4rem;
-        width: 4rem;
-      }
-      .h-2 p{
-        font-size: 0.5rem ;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body >
   <div class="container">
     <div class="head">
       <div class="h-1">
-        <img src="IMG-20230721-WA0004.jpg" alt="Profile Image" />
+        <img id="pfp" src="images/IMG-20230721-WA0004.jpg" alt="Profile Image" />
         <p>Web Developer</p>
       </div>
       <div class="h-2">
         <p>Pushpanjali</p>
-            <a href="https://www.linkedin.com/in/pushpanjali-tiwari" >          
-            <img src="linkedin.png" class="h-2" alt="LinkedIn">
+        <div class="icons">
+            <a href="https://www.linkedin.com/in/pushpanjali_" >          
+            <img src="images/linkedin.png" class="h-2" alt="LinkedIn">
             </a>
             <a href="https://www.instagram.com/tipushpa">
-            <img src="instagram.png" class="h-2" alt="Instagram">
+            <img src="images/instagram.png" class="h-2" alt="Instagram">
             </a>
-            <a href="https://www.youtube.com/tipushpa" >
-            <img src="youtube.png" class="h-2" alt="YouTube">
+            <a href="https://www.youtube.com/@tipushpa8641" >
+            <img src="images/youtube.png" class="h-2" alt="YouTube">
             </a>
+            </div>
 
       </div>
     </div>
@@ -141,38 +37,175 @@
   </div>
 
   <div class="container container2">
-    <div class="projects">
-      <p>My Projects</p>
-        <div class="card" style="width: 18rem;">
-            <img src="https://tipushpa.github.io/rock_paper_scissor/" class="card-img-top" alt="...">
+    <p id="h-project">My Projects</p>
+    <div class="projects carousel">
+        <div class="cards  slide " >
+            <img src="images/rps.jpg" class="card-img-top" alt="...">
             <div class="card-body">
             <h5 class="card-title">rock paper scissor</h5>
             <p class="card-text">made it with just html css js</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <a href="https://tipushpa.github.io/rock_paper_scissor/" class="btn btn-primary">Open Project</a>
+            </div>
+        </div>
+
+        <div class="cards   slide " >
+            <img src="images/stack_it_text.svg" class="card-img-top" alt="...">
+            <div class="card-body">
+            <h5 class="card-title">stack it</h5>
+            <p class="card-text">made with drf</p>
+            <a href="https://github.com/Tipushpanjali/StackIt.git" class="btn btn-primary">Open Project</a>
+            </div>
+        </div>
+
+        <div class="cards  slide " >
+            <img src="images/invoice_generator_square.svg" class="card-img-top" alt="...">
+            <div class="card-body">
+            <h5 class="card-title">Library Invoice Generator</h5>
+            <p class="card-text">html css js</p>
+            <a href="https://github.com/Tipushpanjali/StackIt.git" class="btn btn-primary">Open Project</a>
+            </div>
+        </div>
+
+        <div class="cards  slide " >
+            <img src="images/currency_exchange_square.svg" class="card-img-top" alt="...">
+            <div class="card-body">
+            <h5 class="card-title">currency exchange</h5>
+            <p class="card-text">react js</p>
+            <a href="https://github.com/Tipushpanjali/StackIt.git" class="btn btn-primary">Open Project</a>
+            </div>
+        </div>
+
+        <div class="cards  slide " >
+            <img src="images/bunk_days_square.svg" class="card-img-top" alt="...">
+            <div class="card-body">
+            <h5 class="card-title">bunk days</h5>
+            <p class="card-text">js html css</p>
+            <a href="https://github.com/Tipushpanjali/StackIt.git" class="btn btn-primary">Open Project</a>
             </div>
         </div>
     </div>
+  
+    <p id="certi-p">My Certificates</p>
+    <div class="certi carousel-container animate-on-scroll">
+       <div class="carousel">
 
-    <div class="certi">
-      <p>My Certificates</p>
-      <p><div class="card" style="width: 18rem;">
-  <img src="..." class="card-img-top" alt="...">
-  <div class="card-body">
-    <p class="card-text">this certificate</p>
+        <div class="col-md-4 mt-4 mt-md-0 icon-box slide course" data-aos="fade-up" data-aos-delay="100" style="padding:0px 0px;padding-bottom: 5px;display: inline-block;">
+              <img src="images/2nd_course.png" class="img-fluid" alt="">
+              <p style="text-align:left;padding: 5px 10px;"><em>Google Cloud Skill Boost</em></p>
+              <h5 style="text-align:left;padding: 0px 10px;">may 11, 2025</h5>
+              <h6 style="text-align:left;padding: 0px 10px;">Introduction to Security Principles in Cloud Computing</h6>
+              <ul style="text-align:left;">
+                 <li>Cloud Computing Basics</li>
+              <li>Security Models and controls</li>
+              <li>IaaS and PaaS</li>
+              <li>Analyst's role and responsibility</li>
+              </ul>
+            </div>
+
+
+            <div class="col-md-4 mt-4 mt-md-0 icon-box slide course" data-aos="fade-up" data-aos-delay="100" style="padding:0px 0px;padding-bottom: 5px;display: inline-block;">
+              <img src="images/2nd_course.png" class="img-fluid" alt="">
+              <p style="text-align:left;padding: 5px 10px;"><em>Google Cloud Skill Boost</em></p>
+              <h5 style="text-align:left;padding: 0px 10px;">june 22, 2025</h5>
+              <h6 style="text-align:left;padding: 0px 10px;">Strategies for Cloud Security Risk Management</h6>
+              <ul style="text-align:left;">
+                <li>Identify risk management</li>
+                <li>Compliance standerds</li>
+                <li>Assessments and Audits</li>
+                <li>Risk and vulnerability framework</li>
+              </ul>
+            </div>
+
+            <div class="col-md-4 mt-4 mt-md-0 icon-box slide course" data-aos="fade-up" data-aos-delay="100" style="padding:0px 0px;padding-bottom: 5px;display: inline-block;">
+              <img src="images/3rd course.png" class="img-fluid" alt="">
+              <p style="text-align:left;padding: 5px 10px;"><em>Google Cloud Skill Boost</em></p>
+              <h5 style="text-align:left;padding: 0px 10px;">july 22, 2025</h5>
+              <h6 style="text-align:left;padding: 0px 10px;">Cloud Security Risks: Identify and Protect Against Threats</h6>
+              <ul style="text-align:left;">
+                <li>Iam Controls</li>
+                <li>CI/CD automation</li>
+                <li>zero trust security model</li>
+                <li>Service account and handling</li>
+              </ul>
+            </div>
+
+            <div class="col-md-4 mt-4 mt-md-0 icon-box slide course" data-aos="fade-up" data-aos-delay="100" style="padding:0px 0px;padding-bottom: 5px;display: inline-block;">
+              <img src="images/arcade.png" class="img-fluid" alt="">
+              <p style="text-align:left;padding: 5px 10px;"><em>Google Cloud Skill Boost</em></p>
+              <h5 style="text-align:left;padding: 0px 10px;">july 26, 2025</h5>
+              <h6 style="text-align:left;padding: 0px 10px;">Skills Boost Arcade Trivia July 2025 Week 3</h6>
+              
+            </div>
+
+            <div class="col-md-4 mt-4 mt-md-0 icon-box slide course" data-aos="fade-up" data-aos-delay="100" style="padding:0px 0px;padding-bottom: 5px;display: inline-block;">
+              <img src="images/certificate.png" class="img-fluid" alt="">
+              <p style="text-align:left;padding: 5px 10px;"><em>Google Cloud Skill Boost</em></p>
+              <h5 style="text-align:left;padding: 0px 10px;">3 august, 2025</h5>
+            </div>
+
+          </div>
+    </div>
+  
+
+     <p id="h-skill">My Skills</p>
+  <div class="carousel-container">
+  <!--<button class="arrow left-arrow" onclick="scrollCarousel(-200)">&#8249;</button>
+
+
+  <div class="carousel" id="skillCarousel">-->
+    <img class="ulta" src="https://www.vectorlogo.zone/logos/python/python-horizontal.svg" alt="Python">
+    <img class="sidha" src="https://www.vectorlogo.zone/logos/java/java-horizontal.svg" alt="Java">
+    <img class="ulta" src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-ar21.svg" alt="HTML5">
+    <img class="sidha" src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS3" height="60" width="90">
+    <img class="ulta" src="https://www.vectorlogo.zone/logos/mysql/mysql-horizontal.svg" alt="MySQL">
+    <img class="sidha" src="images/solidity.svg" alt="Solidity" height="70" width="50">
+    <img class="ulta" src="images/js.svg" alt="JavaScript">
+    <img class="sidha" src="https://www.vectorlogo.zone/logos/djangoproject/djangoproject-ar21.svg" alt="Django">
+    <img class="ulta" src="https://www.vectorlogo.zone/logos/getbootstrap/getbootstrap-ar21.svg" alt="Bootstrap">
+    <img class="sidha" src="images/tailwind.svg" alt="Tailwind CSS">
+    <img class="ulta" src="images/react.svg" alt="React">
+    <img class="sidha" src="https://www.vectorlogo.zone/logos/git-scm/git-scm-ar21.svg" alt="Git">
+    <img class="ulta" src="https://www.vectorlogo.zone/logos/google_cloud/google_cloud-ar21.svg" alt="Google Cloud">
+    <img class="sidha" src="https://www.vectorlogo.zone/logos/jupyter/jupyter-ar21.svg" alt="Jupyter">
+    <img class="ulta" src="images/vsc.svg" alt="VSCode">
   </div>
-</div></p>
-    </div>
-
-    <div class="skill">
-      <p>My Skills</p>
-      <p>python css js java html c c++ bootstrap django </p>
-    </div>
+  <button class="arrow right-arrow" onclick="scrollCarousel(200)">&#8250;</button>
+</div>
 
     <div class="connect">
-      <p>Let's Connect</p>
-      <p>Form</p>
-    </div>
+      <p id="h-conn">Let's Connect</p>
+      <div class="conn">
+      <div>
+        <a href="#">
+            <img src="images/mail.png"  alt="email">
+            </a>
+            <p style="text-align: center;">tipushpa7@gmail.com</p>
+
+      </div>
+      <div>
+        <a href="https://www.linkedin.com/in/pushpanjali_" >          
+            <img src="images/linkedin.png"  alt="LinkedIn">
+            </a>
+            <p>LinkedIn</p>
+      </div>
+      <div>
+        
+        <a href="https://drive.google.com/file/d/19h9gyMi8BwXcBfchDf1p39je4N63M0Hf/view?usp=sharing" >
+          <img src="images/resume.png" alt="resume"></a>
+          <p>Resume</p>
+
+      </div>
+      <div>
+        <a href="https://www.instagram.com/tipushpa" >          
+            <img src="images/instagram.png"  alt="IG">
+            </a>
+            <p>Instagram</p>
+      </div>
+      </div>
+      
   </div>
+  <hr>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+<script src="main.js"></script>
 </body>
 </html>
