@@ -45,6 +45,7 @@
       height: 15rem;
       
       object-fit: cover;
+      border: solid #020b58 2px;
 
        /* transition-property: ;
         transition-duration: ;
