@@ -1,9 +1,9 @@
 <h1 align="center">Hi 👋, I'm Pushpanjali</h1>
 <h3 align="center">Full Stack Developer | Django Developer | Cloud security</h3>
 
-- 🔭 I’m currently working on **Voting system integrated with ethereum blockchains**
+- 🔭 I’m currently working on **"EduWise-Your guide to career success", includes LLM based choices according to their interest and background**
 
-- 🌱 I’m currently **learning blockchains, cloud security, google cloud**
+- 🌱 I’m currently **learning about LLMs, blockchains, cloud security, google cloud**
 
 <!--- 👨‍💻 All of my projects are available at (https://your-portfolio-link.com)-->
 
