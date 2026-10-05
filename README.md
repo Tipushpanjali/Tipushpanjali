@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Pushpanjali</h1>
-<h3 align="center">Full Stack Developer | Django Developer | Cloud security</h3>
+<h3 align="center">Full Stack Developer | Django Developer | Cloud security | AI ML </h3>
 
 - 🔭 I’m currently working on **"EduWise-Your guide to career success", includes LLM based choices according to their interest and background**
 
